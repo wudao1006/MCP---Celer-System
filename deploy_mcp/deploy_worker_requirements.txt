@@ -1,0 +1,36 @@
+# 部署Worker的依赖包
+# 这些是deploy_worker.py运行所需的基础依赖
+
+# Celery相关
+celery[redis]>=5.3.0
+redis>=4.5.0
+
+# 系统操作
+pathlib2>=2.3.0
+
+# HTTP客户端（用于与其他服务通信）
+httpx>=0.24.0
+requests>=2.28.0
+
+# 日志和序列化
+jsonpickle>=3.0.0
+
+# 任务调度和时间处理
+pytz>=2023.3
+
+# 文件操作和压缩（如果需要压缩上传）
+patool>=1.12.0
+
+# 进程管理
+psutil>=5.9.0
+
+# 可选：如果需要更好的Docker API支持
+# docker>=6.0.0
+
+# 可选：如果需要SSH远程部署
+# paramiko>=3.0.0
+
+# 可选：如果需要云存储支持
+# boto3>=1.26.0  # AWS S3
+# azure-storage-blob>=12.0.0  # Azure Blob
+# google-cloud-storage>=2.0.0  # Google Cloud Storage

@@ -1,0 +1,16 @@
+生成需求：一个可以执行各类mongodb操作的worker节点
+mongo相关配置：# MongoDB默认配置
+DEFAULT_MONGO_CONFIG = {
+    'host': 'localhost',
+    'port': 27017,
+    'database': 'test',
+    'username': None,
+    'password': None,
+    'connection_string': None
+}
+
+# 数据库集合名称配置
+COLLECTIONS = {
+   ....
+}
+你的工作流程：根据需求生成功能模块->调用generate_startMain_code并根据先前的功能模块生成主启动文件->调用deploy_task，等待部署成功返回的信息->调用trigger_celery_task自测试相关功能->确定可以使用后，调用register_task_info注册这个task项目->返回给我各类信息。

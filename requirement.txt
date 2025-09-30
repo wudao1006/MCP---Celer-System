@@ -1,0 +1,5 @@
+uv
+celery[redis]
+redis
+mcp
+mcp[cli]
