@@ -1,0 +1,15 @@
+{
+    "mcpServers": {
+        "celery-server": {
+            "command": "uv",
+            "args": [
+                "run",
+                "--with",
+                "mcp",
+                "mcp",
+                "run",
+                "mcp_server.py"
+            ]
+        }
+    }
+}
