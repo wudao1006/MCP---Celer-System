@@ -5,7 +5,7 @@
 [![Celery](https://img.shields.io/badge/celery-5.0+-green.svg)](https://docs.celeryproject.org/)
 [![Docker](https://img.shields.io/badge/docker-required-blue.svg)](https://www.docker.com/)
 
-> 🚀 **一个革命性的 AI Agent 自主任务管理系统** - 基于 MCP 和 Celery 打造，让 AI Agent 能够自动生成、部署、测试和调用分布式任务。
+> 🚀 **一个具有创新性的 AI Agent 自主任务管理系统** - 基于 MCP 和 Celery 打造，让 AI Agent 能够自动生成、部署、测试和调用分布式任务。
 
 ---
 
@@ -183,8 +183,8 @@
 ### 1. 克隆项目
 
 ```bash
-git clone https://github.com/yourusername/MCS.git
-cd MCS
+git clone https://github.com/wudao1006/MCP-celery-System.git
+cd MCP-celery-System
 ```
 
 ### 2. 安装依赖
@@ -245,20 +245,7 @@ REDIS_BROKER_DB=0
 REDIS_BACKEND_DB=1
 ```
 
-### 4. 安全检查
-
-在首次提交代码前，运行安全检查：
-
-```bash
-# Linux/Mac
-chmod +x security_check.sh
-./security_check.sh
-
-# Windows
-security_check.bat
-```
-
-### 5. 启动 Redis
+### 4. 启动 Redis
 
 ```bash
 # Linux/Mac
@@ -273,7 +260,7 @@ docker run -d --name redis -p 6379:6379 \
   redis:latest
 ```
 
-### 6. 启动部署 Worker
+### 5. 启动部署 Worker
 
 ```bash
 # Linux/Mac
@@ -286,13 +273,13 @@ cd deploy_mcp
 start_deploy_worker.bat
 ```
 
-### 7. 启动 MCP 服务器
+### 6. 启动 MCP 服务器
 
 ```bash
 python mcp_server.py
 ```
 
-### 8. 配置 Claude Desktop
+### 7. 配置 Claude Desktop
 
 在 Claude Desktop 的配置文件中添加 MCP 服务器：
 
@@ -310,7 +297,7 @@ python mcp_server.py
 }
 ```
 
-### 9. 测试系统
+### 8. 测试系统
 
 在 Claude Desktop 中：
 
@@ -1110,3 +1097,4 @@ Made with ❤️ by the MCS Team
 
 
 </div>
+
