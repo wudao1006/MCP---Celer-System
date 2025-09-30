@@ -1077,7 +1077,6 @@ def important_task(data):
 - **Celery** - 强大的分布式任务队列
 - **Redis** - 高性能的内存数据库
 - **Docker** - 容器化技术
-- **开源社区** - 所有贡献者和用户
 
 ---
 
@@ -1097,4 +1096,5 @@ Made with ❤️ by the MCS Team
 
 
 </div>
+
 
